@@ -128,18 +128,36 @@ test('returnAsAString()test to return numbers as a string', (expect) => {
     const expected3 = '495';
     const actual3 = returnAsAString(4, 9, 5);
     expect.equal(actual3, expected3);
+});
 
-	test('makeLuckyGreeting()test to multiply number by seven', (expect) => {
-		const expected = 28;
+test('makeLuckyGreeting()', (expect) => {
+    const expected = 'Hello! Your lucky number for the day is 12';
 	
-		const actual = multiplyBySeven(4);
+    const actual = makeLuckyGreeting(8, 4);
 	
-		expect.equal(actual, expected);
+    expect.equal(actual, expected);
 	
-		const expected2 = 14;
-		const actual2 = multiplyBySeven(2);
-		expect.equal(actual2, expected2);
+    const expected2 = 'Hello! Your lucky number for the day is 7';
+    const actual2 = makeLuckyGreeting(3, 4);
+    expect.equal(actual2, expected2);
 	
-		const expected3 = 49;
-		const actual3 = multiplyBySeven(7);
-		expect.equal(actual3, expected3);
+    const expected3 = 'Hello! Your lucky number for the day is 3';
+    const actual3 = makeLuckyGreeting(1, 2);
+    expect.equal(actual3, expected3);
+});
+
+test('getSecondItem()', (expect) => {
+    const expected = 'apple';
+
+    const actual = getSecondItem(['kiwi', 'apple', 'orange', 'plum']);
+
+    expect.equal(actual, expected);
+});
+
+test('getLastItem()', (expect) => {
+    const expected = 'plum';
+
+    const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
+
+    expect.equal(actual, expected);
+});
