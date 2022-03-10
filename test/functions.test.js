@@ -83,17 +83,17 @@ test('multiplyBy12ThenHalve()test to multiply number by 12 then cut half of prod
 });
 
 test('divideThenMultiply()test to divide number then multiply result', (expect) => {
-    const expected = 24;
+    const expected = 10;
 
-    const actual = multiplyBy12ThenHalve(4);
+    const actual = divideThenMultiply(8, 4, 5);
 
     expect.equal(actual, expected);
 
-    const expected2 = 30;
-    const actual2 = multiplyBy12ThenHalve(5);
+    const expected2 = 4;
+    const actual2 = divideThenMultiply(10, 5, 2);
     expect.equal(actual2, expected2);
 
-    const expected3 = 42;
-    const actual3 = multiplyBy12ThenHalve(7);
+    const expected3 = 50;
+    const actual3 = divideThenMultiply(100, 10, 5);
     expect.equal(actual3, expected3);
 });
