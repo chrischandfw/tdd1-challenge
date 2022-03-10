@@ -66,18 +66,34 @@ test('multiplyBySeven()test to multiply number by seven', (expect) => {
     expect.equal(actual3, expected3);
 });
 
-test('multiplyBy12ThenHalve()test to multiply number by seven', (expect) => {
-    const expected = 28;
+test('multiplyBy12ThenHalve()test to multiply number by 12 then cut half of product', (expect) => {
+    const expected = 24;
 
-    const actual = multiplyBySeven(4);
+    const actual = multiplyBy12ThenHalve(4);
 
     expect.equal(actual, expected);
 
-    const expected2 = 14;
-    const actual2 = multiplyBySeven(2);
+    const expected2 = 30;
+    const actual2 = multiplyBy12ThenHalve(5);
     expect.equal(actual2, expected2);
 
-    const expected3 = 49;
-    const actual3 = multiplyBySeven(7);
+    const expected3 = 42;
+    const actual3 = multiplyBy12ThenHalve(7);
+    expect.equal(actual3, expected3);
+});
+
+test('divideThenMultiply()test to divide number then multiply result', (expect) => {
+    const expected = 24;
+
+    const actual = multiplyBy12ThenHalve(4);
+
+    expect.equal(actual, expected);
+
+    const expected2 = 30;
+    const actual2 = multiplyBy12ThenHalve(5);
+    expect.equal(actual2, expected2);
+
+    const expected3 = 42;
+    const actual3 = multiplyBy12ThenHalve(7);
     expect.equal(actual3, expected3);
 });

@@ -45,7 +45,7 @@ Output:
 */
 
 export function multiplyBy12ThenHalve(num) {
-    return true;
+    return num * 12 / 2;
 }
 
 
