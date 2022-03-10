@@ -97,3 +97,49 @@ test('divideThenMultiply()test to divide number then multiply result', (expect) 
     const actual3 = divideThenMultiply(100, 10, 5);
     expect.equal(actual3, expected3);
 });
+
+test('returnAsAnArray()test to to return numbers as array', (expect) => {
+    const expected = [8, 4, 5];
+
+    const actual = returnAsAnArray(8, 4, 5);
+
+    expect.deepEqual(actual, expected);
+
+    const expected2 = [11, 12, 13];
+    const actual2 = returnAsAnArray(11, 12, 13);
+    expect.deepEqual(actual2, expected2);
+
+    const expected3 = [21, 22, 23];
+    const actual3 = returnAsAnArray(21, 22, 23);
+    expect.deepEqual(actual3, expected3);
+});
+
+test('returnAsAString()test to return numbers as a string', (expect) => {
+    const expected = '845';
+
+    const actual = returnAsAString(8, 4, 5);
+
+    expect.equal(actual, expected);
+
+    const expected2 = '147';
+    const actual2 = returnAsAString(1, 4, 7);
+    expect.equal(actual2, expected2);
+
+    const expected3 = '495';
+    const actual3 = returnAsAString(4, 9, 5);
+    expect.equal(actual3, expected3);
+
+	test('makeLuckyGreeting()test to multiply number by seven', (expect) => {
+		const expected = 28;
+	
+		const actual = multiplyBySeven(4);
+	
+		expect.equal(actual, expected);
+	
+		const expected2 = 14;
+		const actual2 = multiplyBySeven(2);
+		expect.equal(actual2, expected2);
+	
+		const expected3 = 49;
+		const actual3 = multiplyBySeven(7);
+		expect.equal(actual3, expected3);
