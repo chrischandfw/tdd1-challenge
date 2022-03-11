@@ -163,9 +163,9 @@ test('getLastItem()', (expect) => {
 });
 
 test('getRandomNumber()', (expect) => {
-    const expected = [0, 1, 2, 3, 4, 5].includes(actual);
-
+    
     const actual = getRandomNumber();
+    const expected = [0, 1, 2, 3, 4, 5].includes(actual);
 
     expect.equal(true, expected);
 });
